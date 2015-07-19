@@ -28,7 +28,7 @@ public class Settings {
     }
 
     public int getNumSpeed() {
-        return mPrefUtil.getInt("NumSpeed", 4);
+        return mPrefUtil.getInt("NumSpeed", 3);
     }
 
     public void putNumSpeed( int i_value ) {
