@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">シャッフルナビ</string>
+    <string name="title_activity_main">シャッフルナビ</string>
+    <string name="title_activity_random_deal_shuffle">シャッフルナビ</string>
+    <string name="description_activity_random_deal_shuffle">リアルなカードをシャッフルするためのナビアプリです。</string>
+
+    <string name="stacked_count_unit_singular">枚</string>
+    <string name="stacked_count_unit_plural">枚</string>
+
+    <string name="start">スタート</string>
+    <string name="restart">再開</string>
+    <string name="pause">一時停止</string>
+    <string name="stop">ストップ</string>
+    <string name="reset">リセット</string>
+    <string name="finish">フィニッシュ</string>
+
+    <string name="title_speed">速さ</string>
+    <string name="title_counter">カウンタ</string>
+    <string name="title_num_cards">枚数</string>
+    <string name="title_num_packets">山数</string>
+
+    <string name="title_activity_two_dices">Two Dices</string>
+
+</resources>
