@@ -8,6 +8,7 @@
 
     <string name="title_activity_about" translatable="false">About</string>
     <string name="about_developer" translatable="false">Ninton G.K.</string>
+    <string name="about_sourcecode" translatable="false">https://github.com/ninton/ShuffleNavi</string>
 
     <string name="title_activity_random_deal_shuffle">Shuffle Navi</string>
     <string name="description_activity_random_deal_shuffle">The navigator application for a shuffle to make the realistic card.</string>

@@ -53,6 +53,27 @@
             android:layout_marginTop="5dp"
             android:background="#999999" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="SourceCode(GitHub)"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/about_sourcecode"
+            android:id="@+id/about_sourcecode" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#999999" />
+
     </LinearLayout>
 
 </RelativeLayout>
