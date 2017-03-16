@@ -1,6 +1,16 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs
+            {
+        release {
+            keyAlias System.getenv('keyAlias')
+            keyPassword System.getenv('keyPassword')
+            storeFile file("${System.getenv('storeFile')}")
+            storePassword System.getenv('storePassword')
+        }
+    }
+
     compileSdkVersion Integer.parseInt(project.ANDROID_BUILD_SDK_VERSION)
     buildToolsVersion ANDROID_BUILD_TOOLS_VERSION
 
@@ -8,7 +18,7 @@ android {
         applicationId "jp.co.ninton.shufflenavi"
         minSdkVersion Integer.parseInt(ANDROID_BUILD_MIN_SDK_VERSION)
         targetSdkVersion Integer.parseInt(ANDROID_BUILD_TARGET_SDK_VERSION)
-        versionCode 11
+        versionCode Integer.parseInt(System.getenv('BUILD_NUMBER'))
         versionName "1.6"
     }
     buildTypes {
@@ -16,6 +26,7 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             buildConfigField "String", "flurry_api_key", "\"" + System.getenv("flurry_api_key") + "\""
+            signingConfig signingConfigs.release
         }
         debug {
             buildConfigField "String", "flurry_api_key", "\"" + System.getenv("flurry_api_key") + "\""
