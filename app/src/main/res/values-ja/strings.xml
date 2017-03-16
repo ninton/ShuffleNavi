@@ -21,5 +21,7 @@
     <string name="title_num_packets">山数</string>
 
     <string name="title_activity_two_dices">Two Dices</string>
+    <string name="about_developer_title">開発者</string>
+    <string name="about_version_title">バージョン</string>
 
 </resources>

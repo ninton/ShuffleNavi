@@ -7,7 +7,12 @@
     <string name="action_settings" translatable="false">Settings</string>
 
     <string name="title_activity_about" translatable="false">About</string>
+    <string name="about_version_title">Version</string>
+    <string name="about_developer_title">Developer</string>
+
     <string name="about_developer" translatable="false">Ninton G.K.</string>
+
+    <string name="about_sourcecode_title" translatable="false">SourceCode(GitHub)</string>
     <string name="about_sourcecode" translatable="false">https://github.com/ninton/ShuffleNavi</string>
 
     <string name="title_activity_random_deal_shuffle">Shuffle Navi</string>
@@ -30,5 +35,17 @@
     <string name="title_num_cards">Cards</string>
     <string name="title_num_packets">Packets</string>
 
+    <string name="icon_next" translatable="false">&gt;</string>
+    <string name="icon_plus" translatable="false">+</string>
+    <string name="icon_minus" translatable="false">-</string>
 
+    <string name="icon_debug" translatable="false">DEBUG</string>
+
+    <string name="shuffle_pulled_count" translatable="false">25</string>
+    <string name="shuffle_rest_count" translatable="false">52</string>
+    <string name="txt_shuffle_num_cards" translatable="false">3</string>
+    <string name="txt_shuffle_num_packets" translatable="false">3</string>
+
+    <string name="packet_name" translatable="false">1</string>
+    <string name="stacked_count" translatable="false">23</string>
 </resources>
