@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     >
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/packet_bg_normal"
+        tools:ignore="ContentDescription"
         android:src="@drawable/packet_bg_normal"
         android:scaleType="fitXY"
         android:adjustViewBounds="false" />
@@ -17,6 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/packet_bg_current"
+        tools:ignore="ContentDescription"
         android:src="@drawable/packet_bg_current"
         android:scaleType="fitXY"
         android:adjustViewBounds="false"
@@ -34,14 +36,13 @@
             android:layout_weight="2">
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/packet_name"
                 android:textColor="#FFFFFF"
                 android:id="@+id/packet_name"
                 android:layout_gravity="center"
-                android:layout_centerInParent="true"
                 android:textSize="32sp"
                 android:layout_weight="3"
                 android:textAlignment="center"
@@ -55,15 +56,13 @@
             android:layout_weight="1">
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="@string/stacked_count"
                 android:textColor="#CCCCCC"
                 android:id="@+id/stacked_count"
                 android:layout_gravity="center"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
                 android:layout_weight="1"
                 android:textAlignment="center"
                 android:gravity="center_vertical|center_horizontal" />

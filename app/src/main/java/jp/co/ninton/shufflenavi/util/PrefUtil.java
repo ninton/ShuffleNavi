@@ -10,13 +10,11 @@ public class PrefUtil {
     Context mContext;
     String mName;
     SharedPreferences mPref;
-    SharedPreferences.Editor mEditor;
 
     public PrefUtil(Context i_context, String i_name) {
         mContext = i_context;
         mName = i_name;
         mPref = mContext.getApplicationContext().getSharedPreferences(i_name, Context.MODE_PRIVATE);
-        mEditor = mPref.edit();
     }
 
     public int getInt(String i_key, int i_def_value) {
@@ -32,17 +30,23 @@ public class PrefUtil {
     }
 
     public void putInt(String i_key, int i_value) {
-        mEditor.putInt(i_key, i_value);
-        mEditor.commit();
+        SharedPreferences.Editor editor = mPref.edit();
+        editor.putInt(i_key, i_value);
+        editor.apply();
+        editor.commit();
     }
 
     public void putBoolean(String i_key, boolean i_value) {
-        mEditor.putBoolean(i_key, i_value);
-        mEditor.commit();
+        SharedPreferences.Editor editor = mPref.edit();
+        editor.putBoolean(i_key, i_value);
+        editor.apply();
+        editor.commit();
     }
 
     public void putString(String i_key, String i_value) {
-        mEditor.putString(i_key, i_value);
-        mEditor.commit();
+        SharedPreferences.Editor editor = mPref.edit();
+        editor.putString(i_key, i_value);
+        editor.apply();
+        editor.commit();
     }
 }

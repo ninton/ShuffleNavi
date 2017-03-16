@@ -15,6 +15,8 @@ import android.widget.Toast;
 
 import com.flurry.android.FlurryAgent;
 
+import java.util.Locale;
+
 import jp.co.ninton.shufflenavi.R;
 import jp.co.ninton.shufflenavi.activity.ui.PacketsUI;
 import jp.co.ninton.shufflenavi.activity.util.DealShuffle.Deck;
@@ -311,7 +313,7 @@ public class RandomDealShuffleActivityFragment extends Fragment {
 
     private void render_counter( int i_id, int i_value ) {
         TextView v = (TextView)mRootView.findViewById( i_id );
-        String s = String.format("%d", i_value);
+        String s = String.format(Locale.ENGLISH, "%d", i_value);
         v.setText(s);
     }
 

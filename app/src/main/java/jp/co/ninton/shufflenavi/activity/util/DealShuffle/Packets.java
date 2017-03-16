@@ -1,5 +1,7 @@
 package jp.co.ninton.shufflenavi.activity.util.DealShuffle;
 
+import java.util.Locale;
+
 import jp.co.ninton.shufflenavi.util.Log;
 
 public class Packets {
@@ -52,7 +54,7 @@ public class Packets {
         mPackets[i_packetIndex] ++;
         mLastPacketIndex = i_packetIndex;
 
-        Log.v( TAG, String.format("stackUp:i_packetIndex=%d, mCardLen=%d, mCards.length=%d", i_packetIndex, mCardLen, mCards.length) );
+        Log.v( TAG, String.format(Locale.ENGLISH, "stackUp:i_packetIndex=%d, mCardLen=%d, mCards.length=%d", i_packetIndex, mCardLen, mCards.length) );
         mCards[mCardLen] = i_packetIndex;
         ++mCardLen;
     }

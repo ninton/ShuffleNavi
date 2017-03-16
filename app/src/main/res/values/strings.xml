@@ -1,10 +1,8 @@
 <resources>
     <string name="app_name">Shuffle Navi</string>
     <string name="title_activity_main">Shuffle Navi</string>
-    <string name="hello_world" translatable="false">Hello world!</string>
 
     <string name="action_about" translatable="false">About</string>
-    <string name="action_settings" translatable="false">Settings</string>
 
     <string name="title_activity_about" translatable="false">About</string>
     <string name="about_version_title">Version</string>
@@ -14,11 +12,6 @@
 
     <string name="about_sourcecode_title" translatable="false">SourceCode(GitHub)</string>
     <string name="about_sourcecode" translatable="false">https://github.com/ninton/ShuffleNavi</string>
-
-    <string name="title_activity_random_deal_shuffle">Shuffle Navi</string>
-    <string name="description_activity_random_deal_shuffle">The navigator application for a shuffle to make the realistic card.</string>
-
-    <string name="title_activity_two_dices">Two Dices</string>
 
     <string name="stacked_count_unit_singular">card</string>
     <string name="stacked_count_unit_plural">cards</string>
@@ -35,7 +28,6 @@
     <string name="title_num_cards">Cards</string>
     <string name="title_num_packets">Packets</string>
 
-    <string name="icon_next" translatable="false">&gt;</string>
     <string name="icon_plus" translatable="false">+</string>
     <string name="icon_minus" translatable="false">-</string>
 

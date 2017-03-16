@@ -10,6 +10,8 @@ import android.view.animation.AlphaAnimation;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.Locale;
+
 import jp.co.ninton.shufflenavi.R;
 import jp.co.ninton.shufflenavi.util.Log;
 
@@ -47,7 +49,7 @@ public class PacketsUI {
         Resources res = mContext.getResources();
 
         for ( int i = 0; i < 10; ++i ) {
-            String res_name = String.format("deck_%d", i);
+            String res_name = String.format(Locale.ENGLISH, "deck_%d", i);
             int res_id = res.getIdentifier(res_name, "id", pkg_name);
             View layout = i_rootView.findViewById(res_id);
             TextView packet_name = (TextView)layout.findViewById( R.id.packet_name );
@@ -101,7 +103,7 @@ public class PacketsUI {
         } else {
             unit = mContext.getString(R.string.stacked_count_unit_plural);
         }
-        String s = String.format( "%d %s", i_value, unit );
+        String s = String.format(Locale.ENGLISH, "%d %s", i_value, unit );
         mViewHolders[i_index].mStackedCount.setText(s);
     }
 
