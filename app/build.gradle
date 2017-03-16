@@ -15,6 +15,10 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "flurry_api_key", "\"" + System.getenv("flurry_api_key") + "\""
+        }
+        debug {
+            buildConfigField "String", "flurry_api_key", "\"" + System.getenv("flurry_api_key") + "\""
         }
     }
     applicationVariants.all { variant ->

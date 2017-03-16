@@ -33,7 +33,8 @@ public class MyApplication extends Application {
         String api_key = "";
 
         try {
-            api_key = getString(R.string.flurry_api_key);
+            api_key = BuildConfig.flurry_api_key;
+            Log.i(TAG, "flurry_api_key = " + api_key);
         } catch (Exception e) {
             Log.w(TAG, "flurry_api_key is not defined");
         }
