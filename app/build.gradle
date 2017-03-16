@@ -19,7 +19,7 @@ android {
         minSdkVersion Integer.parseInt(ANDROID_BUILD_MIN_SDK_VERSION)
         targetSdkVersion Integer.parseInt(ANDROID_BUILD_TARGET_SDK_VERSION)
         versionCode Integer.parseInt(System.getenv('BUILD_NUMBER'))
-        versionName "1.6"
+        versionName VERSION_NAME
     }
     buildTypes {
         release {
