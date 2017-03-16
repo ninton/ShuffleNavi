@@ -8,8 +8,8 @@ android {
         applicationId "jp.co.ninton.shufflenavi"
         minSdkVersion Integer.parseInt(ANDROID_BUILD_MIN_SDK_VERSION)
         targetSdkVersion Integer.parseInt(ANDROID_BUILD_TARGET_SDK_VERSION)
-        versionCode 10
-        versionName "1.5"
+        versionCode 11
+        versionName "1.6"
     }
     buildTypes {
         release {
