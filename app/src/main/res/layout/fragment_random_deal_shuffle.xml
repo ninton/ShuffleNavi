@@ -1,363 +1,357 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="jp.co.ninton.shufflenavi.activity.RandomDealShuffleActivityFragment">
+    tools:context="jp.co.ninton.shufflenavi.activity.RandomDealShuffleActivityFragment"
+    android:orientation="vertical"
+    >
 
     <LinearLayout
-        android:orientation="vertical"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
-        <LinearLayout
-            android:baselineAligned="false"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1">
+        <include
+            android:id="@+id/deck_0"
+            layout="@layout/grid_item_packet"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp" />
 
-            <include
-                android:id="@+id/deck_0"
-                layout="@layout/grid_item_packet"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp" />
+        <include
+            android:id="@+id/deck_1"
+            layout="@layout/grid_item_packet"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_margin="1dp" />
 
-            <include
-                android:id="@+id/deck_1"
-                layout="@layout/grid_item_packet"
-                android:layout_weight="1"
-                android:layout_height="match_parent"
-                android:layout_width="0dp"
-                android:layout_margin="1dp" />
+        <include
+            android:id="@+id/deck_2"
+            layout="@layout/grid_item_packet"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp" />
 
-            <include
-                android:id="@+id/deck_2"
-                layout="@layout/grid_item_packet"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp" />
+        <include
+            android:id="@+id/deck_3"
+            layout="@layout/grid_item_packet"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp" />
 
-            <include
-                android:id="@+id/deck_3"
-                layout="@layout/grid_item_packet"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp" />
-
-            <include
-                android:id="@+id/deck_4"
-                layout="@layout/grid_item_packet"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:baselineAligned="false"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1">
-
-            <include
-                android:id="@+id/deck_5"
-                layout="@layout/grid_item_packet"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp" />
-
-            <include
-                android:id="@+id/deck_6"
-                layout="@layout/grid_item_packet"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp" />
-
-            <include
-                android:id="@+id/deck_7"
-                layout="@layout/grid_item_packet"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp" />
-
-            <include
-                android:id="@+id/deck_8"
-                layout="@layout/grid_item_packet"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp" />
-
-            <include
-                android:id="@+id/deck_9"
-                layout="@layout/grid_item_packet"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:baselineAligned="false"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1">
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#99CCCC"
-                android:layout_margin="1dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="@string/title_speed"
-                    android:gravity="center_horizontal"
-                    android:layout_weight="1"
-                    />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="@string/txt_shuffle_num_packets"
-                    android:id="@+id/txt_shuffle_num_speed"
-                    android:gravity="center_horizontal"
-                    android:layout_weight="1" />
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:text="@string/icon_minus"
-                        android:id="@+id/btn_shuffle_num_speed_minus"
-                        android:layout_weight="1"
-                        android:gravity="center_horizontal"
-                        android:textSize="32sp" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:text="@string/icon_plus"
-                        android:id="@+id/btn_shuffle_num_speed_plus"
-                        android:layout_weight="1"
-                        android:gravity="center_horizontal"
-                        android:textSize="32sp" />
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_margin="1dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="@string/start"
-                    android:id="@+id/btn_start"
-                    android:gravity="center_vertical|center_horizontal"
-                    android:background="#CC9999" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="@string/reset"
-                    android:id="@+id/btn_reset"
-                    android:gravity="center_vertical|center_horizontal"
-                    android:background="#CC9999"
-                    android:layout_margin="1dp"
-                    android:visibility="gone" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_margin="1dp"
-                android:background="#CCCCCC"
-                >
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="@string/title_counter"
-                    android:gravity="center_horizontal"
-                    android:layout_weight="1"
-                    />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="@string/shuffle_pulled_count"
-                    android:id="@+id/shuffle_pulled_count"
-                    android:layout_weight="1"
-                    android:gravity="center_horizontal" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="@string/shuffle_rest_count"
-                    android:id="@+id/shuffle_rest_count"
-                    android:layout_weight="1"
-                    android:gravity="center_horizontal"
-                    />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_margin="1dp"
-                android:background="#99CCCC"
-                >
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="@string/title_num_cards"
-                    android:gravity="center_horizontal"
-                    android:layout_weight="1" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="@string/txt_shuffle_num_cards"
-                    android:id="@+id/txt_shuffle_num_cards"
-                    android:gravity="center_horizontal"
-                    android:layout_weight="1" />
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:text="@string/icon_minus"
-                        android:id="@+id/btn_shuffle_num_cards_minus"
-                        android:layout_weight="1"
-                        android:gravity="center_horizontal"
-                        android:textSize="32sp" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:text="@string/icon_plus"
-                        android:id="@+id/btn_shuffle_num_cards_plus"
-                        android:layout_weight="1"
-                        android:gravity="center_horizontal"
-                        android:textSize="32sp" />
-
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_margin="1dp"
-                android:background="#99CCCC"
-                >
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="@string/title_num_packets"
-                    android:gravity="center_horizontal"
-                    android:layout_weight="1" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="@string/txt_shuffle_num_packets"
-                    android:id="@+id/txt_shuffle_num_packets"
-                    android:gravity="center_horizontal"
-                    android:layout_weight="1" />
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:text="@string/icon_minus"
-                        android:id="@+id/btn_shuffle_num_packets_minus"
-                        android:layout_weight="1"
-                        android:gravity="center_horizontal"
-                        android:textSize="32sp" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:text="@string/icon_plus"
-                        android:id="@+id/btn_shuffle_num_packets_plus"
-                        android:layout_weight="1"
-                        android:gravity="center_horizontal"
-                        android:textSize="32sp" />
-
-                </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/btnDebug"
-            android:text="@string/icon_debug"
-            android:gravity="center_vertical|center_horizontal"
-            android:textSize="24sp"
-            android:visibility="gone" />
+        <include
+            android:id="@+id/deck_4"
+            layout="@layout/grid_item_packet"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp" />
 
     </LinearLayout>
 
+    <LinearLayout
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
-</RelativeLayout>
+        <include
+            android:id="@+id/deck_5"
+            layout="@layout/grid_item_packet"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp" />
+
+        <include
+            android:id="@+id/deck_6"
+            layout="@layout/grid_item_packet"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp" />
+
+        <include
+            android:id="@+id/deck_7"
+            layout="@layout/grid_item_packet"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp" />
+
+        <include
+            android:id="@+id/deck_8"
+            layout="@layout/grid_item_packet"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp" />
+
+        <include
+            android:id="@+id/deck_9"
+            layout="@layout/grid_item_packet"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#99CCCC"
+            android:layout_margin="1dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/title_speed"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/txt_shuffle_num_packets"
+                android:id="@+id/txt_shuffle_num_speed"
+                android:gravity="center_horizontal"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/icon_minus"
+                    android:id="@+id/btn_shuffle_num_speed_minus"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/icon_plus"
+                    android:id="@+id/btn_shuffle_num_speed_plus"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:textSize="32sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="1dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/start"
+                android:id="@+id/btn_start"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="#CC9999" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/reset"
+                android:id="@+id/btn_reset"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="#CC9999"
+                android:layout_margin="1dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="1dp"
+            android:background="#CCCCCC"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/title_counter"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/shuffle_pulled_count"
+                android:id="@+id/shuffle_pulled_count"
+                android:layout_weight="1"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/shuffle_rest_count"
+                android:id="@+id/shuffle_rest_count"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="1dp"
+            android:background="#99CCCC"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/title_num_cards"
+                android:gravity="center_horizontal"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/txt_shuffle_num_cards"
+                android:id="@+id/txt_shuffle_num_cards"
+                android:gravity="center_horizontal"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/icon_minus"
+                    android:id="@+id/btn_shuffle_num_cards_minus"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/icon_plus"
+                    android:id="@+id/btn_shuffle_num_cards_plus"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:textSize="32sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="1dp"
+            android:background="#99CCCC"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/title_num_packets"
+                android:gravity="center_horizontal"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/txt_shuffle_num_packets"
+                android:id="@+id/txt_shuffle_num_packets"
+                android:gravity="center_horizontal"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/icon_minus"
+                    android:id="@+id/btn_shuffle_num_packets_minus"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/icon_plus"
+                    android:id="@+id/btn_shuffle_num_packets_plus"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:textSize="32sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDebug"
+        android:text="@string/icon_debug"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="24sp"
+        android:visibility="gone" />
+
+</LinearLayout>
