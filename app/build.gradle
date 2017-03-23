@@ -18,7 +18,7 @@ android {
         applicationId "jp.co.ninton.shufflenavi"
         minSdkVersion Integer.parseInt(ANDROID_BUILD_MIN_SDK_VERSION)
         targetSdkVersion Integer.parseInt(ANDROID_BUILD_TARGET_SDK_VERSION)
-        versionCode Integer.parseInt(System.getenv('BUILD_NUMBER'))
+        versionCode Integer.parseInt(VERSION_CODE)
         versionName VERSION_NAME
     }
     buildTypes {
@@ -46,6 +46,9 @@ android {
                 }
             }
         }
+    }
+    lintOptions {
+        disable 'GoogleAppIndexingWarning', 'RtlEnabled'
     }
 }
 
